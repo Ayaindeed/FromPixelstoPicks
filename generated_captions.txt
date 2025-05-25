@@ -1,0 +1,3 @@
+Caption: a man sitting at a table with a cup of coffee 
+Image: t1.jpg
+--------------------------------------------------

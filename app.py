@@ -263,11 +263,10 @@ def main():
                     st.write(f"• {det['name']} ({confidence:.1f}%)")
 
         with col3:
-            st.subheader("Generated Caption")
+            st.subheader("Image Description")
             with st.spinner("Generating caption..."):
                 caption = generate_caption(image, models)
                 st.success(caption)
-
                 # Generate hashtags
                 object_labels = [det['name'] for det in detections]
                 hashtags = models['hashtag_generator'].generate_hashtags(caption, object_labels)

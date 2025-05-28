@@ -67,6 +67,8 @@ def setup_sidebar():
     # Version info
     st.sidebar.markdown("---")
     st.sidebar.markdown("v2.0 • 2025")
+    st.sidebar.markdown(" © R. Aya")
+
 
     return settings
 
@@ -107,8 +109,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-
-os.makedirs("uploads", exist_ok=True)
 
 
 @st.cache_resource
